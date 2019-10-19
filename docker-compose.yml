@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  shop:
+    build: .
+    environment:
+      - WEB_CONCURRENCY=1
+    ports:
+      - "8345:5000"
