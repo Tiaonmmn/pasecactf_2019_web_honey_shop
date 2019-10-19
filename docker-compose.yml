@@ -2,7 +2,8 @@ version: '3.3'
 
 services:
   shop:
-    build: ctftraining/pasecactf_2019_web_honey_shop
+    build: .
+    image: ctftraining/pasecactf_2019_web_honey_shop
     environment:
       - WEB_CONCURRENCY=1
     ports:
